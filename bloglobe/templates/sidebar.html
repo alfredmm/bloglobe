@@ -1,0 +1,31 @@
+{% block sidebar %}
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #89a7c9;
+        }
+        #blink {
+  animation: blinker 1s linear infinite backwards;
+        }
+
+        @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+}
+
+</style>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+<div class="card my-4">
+        <h5 class="card-header" id="blink">Fact Check!</h5>
+    <div class="card-body">
+        <p class="card-text"> You have started a Journey to Greatness, Keep Coming Back..!</p>
+        <a href="{% url 'home' %}"
+           class="btn btn-danger">Know more!</a>
+    </div>
+</div>
+</div>
+
+{% endblock sidebar %}
